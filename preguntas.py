@@ -140,5 +140,5 @@ def pregunta_04():
     y_pred = linearRegression.predict(X_test)
     # Compute and print R^2 and RMSE
     print("R^2: {:6.4f}".format(linearRegression.score(X_test, y_test)))
-    rmse = np.sqrt(____(____, ____))
+    rmse = np.sqrt(mean_squared_error(y_test,y_pred))
     print("Root Mean Squared Error: {:6.4f}".format(rmse))
